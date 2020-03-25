@@ -24,14 +24,14 @@ mobile = ['15***0','1***6','13***10',
             '153***122','173***197','187***323','186***636']
 
 while True:
-    if time.localtime(time.time()).tm_wday < 5:
-        if time.localtime(time.time()).tm_hour == 8:
-            if time.localtime(time.time()).tm_min == 54:
+    if time.localtime(time.time()).tm_wday < 5:#周一到周五
+        if time.localtime(time.time()).tm_hour == 8:#8点
+            if time.localtime(time.time()).tm_min == 54:#54分
                 re_msg = dd_send_msg.send_Dingmsg(data = {"msgtype": "text", "text": { "content": "温馨提示：疫情填报，上班打卡！"}, "at": {"atMobiles": mobile, "isAtAll": False}})
                 print (re_msg)
                 time.sleep(60)
-        if time.localtime(time.time()).tm_hour == 17:
-            if time.localtime(time.time()).tm_min == 29:
+        if time.localtime(time.time()).tm_hour == 17:#17点
+            if time.localtime(time.time()).tm_min == 29:#29分
                 re_msg = dd_send_msg.send_Dingmsg(data = {"msgtype": "text", "text": { "content": "温馨提示：下班打卡，填写日报！"}, "at": {"atMobiles": mobile, "isAtAll": False}})
                 print (re_msg)
                 time.sleep(60)
