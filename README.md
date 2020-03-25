@@ -12,8 +12,9 @@ https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
 import dd_send_msg
 ```  
 
-3.消息类型
-'''    data = {
+3.消息类型  
+```
+data = {
      "msgtype": "markdown",
      "markdown": {
          "title":"MarkDown 测试",
@@ -31,11 +32,11 @@ import dd_send_msg
                  "1. 有序列表1  \n"+
                  "2. 有序列表2  \n"+
                  "> A man who stands for nothing will fall for anything.\n"
-     }}'''
+     }}
+```
 
 
-'''
-
+```
 data = {
     "msgtype": "text", 
     "text": {
@@ -49,9 +50,9 @@ data = {
         "isAtAll": false
     }
 }
-'''
+```
 
-'''
+```
 data = {
     "msgtype": "link", 
     "link": {
@@ -62,7 +63,7 @@ data = {
         "messageUrl": "https://www.dingtalk.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI"
     }
 }
-'''
+```
 
 4.示例代码
 ```Python
