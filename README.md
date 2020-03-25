@@ -8,5 +8,7 @@ https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
 
 2.在自己的程序导入  
 
-```import dd_send_msg```
+```Python
+import dd_send_msg
+```
 
