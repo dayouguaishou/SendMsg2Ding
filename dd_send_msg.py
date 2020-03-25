@@ -29,4 +29,4 @@ def send_Dingmsg(url = 'https://oapi.dingtalk.com/robot/send?access_token=******
     return (d_send.send_msg(send_url,data))#返回服务参数
 
 
-#print (send_Dingmsg(url = 'https://oapi.dingtalk.com/robot/send?access_token=65e996f11cf668d304286d9e038c918db1456f22c6c53898ffbea06d35160381',keys_str = 'SEC4764db7ce081ac1350e309ee3b7e92ee343cda89bb4fc094dec1a76ba5ab239a',))
+#print (send_Dingmsg(url = 'https://oapi.dingtalk.com/robot/send?access_token=6*******1',keys_str = 'SEC****239a',))
