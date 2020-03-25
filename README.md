@@ -12,7 +12,59 @@ https://ding-doc.dingtalk.com/doc#/serverapi2/qf2nxq
 import dd_send_msg
 ```  
 
-3.示例代码
+3.消息类型
+'''    data = {
+     "msgtype": "markdown",
+     "markdown": {
+         "title":"MarkDown 测试",
+         "text": "# 一级标题 \n" +
+                 "## 二级标题 \n" +
+                 "### 三级标题 \n" +
+                 "#### 四级标题 \n" +
+                 "##### 五级标题 \n" +
+                 "###### 六级标题 \n" +
+                 "**bold** \n"+
+                 "*italic* \n"+
+                 "![](http://name.com/pic.jpg) \n"+
+                 ">- 无序列表1  \n"+
+                 ">- 无序列表2  \n"+
+                 "1. 有序列表1  \n"+
+                 "2. 有序列表2  \n"+
+                 "> A man who stands for nothing will fall for anything.\n"
+     }}'''
+
+
+'''
+
+data = {
+    "msgtype": "text", 
+    "text": {
+        "content": "我就是我, 是不一样的烟火@156xxxx8827"
+    }, 
+    "at": {
+        "atMobiles": [
+            "156xxxx8827", 
+            "189xxxx8325"
+        ], 
+        "isAtAll": false
+    }
+}
+'''
+
+'''
+data = {
+    "msgtype": "link", 
+    "link": {
+        "text": "这个即将发布的新版本，创始人xx称它为“红树林”。
+而在此之前，每当面临重大升级，产品经理们都会取一个应景的代号，这一次，为什么是“红树林”？", 
+        "title": "时代的火车向前开", 
+        "picUrl": "", 
+        "messageUrl": "https://www.dingtalk.com/s?__biz=MzA4NjMwMTA2Ng==&mid=2650316842&idx=1&sn=60da3ea2b29f1dcc43a7c8e4a7c97a16&scene=2&srcid=09189AnRJEdIiWVaKltFzNTw&from=timeline&isappinstalled=0&key=&ascene=2&uin=&devicetype=android-23&version=26031933&nettype=WIFI"
+    }
+}
+'''
+
+4.示例代码
 ```Python
 '''
 上下班打卡提醒机器人
